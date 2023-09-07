@@ -1,0 +1,20 @@
+@mixin d-flex($js){
+    display: flex;
+    justify-content:$js;
+    align-items: center;
+}
+
+@mixin grid($fr,$gap){
+    display: grid;
+    grid-template-columns: $fr;
+    gap: $gap;
+}
+
+@mixin larg-text($font-size,$lh){
+    font-family: 'Abhaya Libre', serif;
+    font-size: $font-size;
+    font-weight: 800;
+    line-height: $lh;
+    letter-spacing: -0.08em;
+    color: $text_primary2;
+}
